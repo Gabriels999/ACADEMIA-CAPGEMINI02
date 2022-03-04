@@ -11,7 +11,7 @@ function Q1() {
   };
   const newArray = array.sort(compareNumbers);
   const index = (newArray.length + 1) / 2;
-  console.log(`A mediana do array é: ${newArray[index - 1]}`);
+  console.log(newArray[index - 1]);
 }
 
 Q1();
