@@ -1,11 +1,11 @@
-function Q2() {
-  const n = [1, 5, 3, 4, 2];
-  const x = 2;
+//Questão 2:
+
+function Q2(array, minus) {
   let count = 0;
-  for (i = 0; i < n.length; i++) {
-    const difference = n[i] - x;
-    for (j = 0; j < n.length; j++) {
-      if (difference == n[j]) {
+  for (i = 0; i < array.length; i++) {
+    const difference = array[i] - minus;
+    for (j = 0; j < array.length; j++) {
+      if (difference == array[j]) {
         count++;
       }
     }
@@ -13,4 +13,4 @@ function Q2() {
   console.log(count);
 }
 
-Q2();
+Q2([1, 5, 3, 4, 2], 2);

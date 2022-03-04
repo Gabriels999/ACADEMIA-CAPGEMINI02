@@ -1,7 +1,6 @@
 // Questão 1:
 
-function Q1() {
-  const array = [9, 2, 1, 4, 6];
+function Q1(array) {
 
   if (array.length % 2 == 0) {
     return console.log("Array inválido.");
@@ -14,4 +13,4 @@ function Q1() {
   console.log(newArray[index - 1]);
 }
 
-Q1();
+Q1([9, 2, 1, 4, 6]);
